@@ -1,15 +1,12 @@
-#ifndef STATIONERY_H
-#define STATIONERY_H
-
 #include "Base.h"
 #include <string>
 
 class Stationery : public Base {
 private:
-    std::string type;       // Тип канцелярии
-    std::string color;      // Цвет
-    std::string purpose;    // Назначение
-    double price;           // Стоимость
+    std::string type;       // Г’ГЁГЇ ГЄГ Г­Г¶ГҐГ«ГїГ°ГЁГЁ
+    std::string color;      // Г–ГўГҐГІ
+    std::string purpose;    // ГЌГ Г§Г­Г Г·ГҐГ­ГЁГҐ
+    double price;           // Г‘ГІГ®ГЁГ¬Г®Г±ГІГј
 
 public:
     
@@ -26,17 +23,15 @@ public:
     void setName(const std::string&) override;
     std::string getName() const override;
 
-    // сеттеры
+    // Г±ГҐГІГІГҐГ°Г»
     void setType(const std::string&);
     void setColor(const std::string&);
     void setPurpose(const std::string&);
     void setPrice(double);
 
-    // геттеры
+    // ГЈГҐГІГІГҐГ°Г»
     std::string getType() const;
     std::string getColor() const;
     std::string getPurpose() const;
     double getPrice() const;
 };
-
-#endif
